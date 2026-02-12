@@ -11,7 +11,7 @@ export default function ProcessingScreen() {
   return (
     <div className="flex items-center justify-center min-h-screen bg-white">
       <div className="text-center space-y-6 max-w-lg w-full p-6">
-        <div className="mx-auto w-20 h-20 flex items-center justify-center bg-gradient-to-br from-blue-50 to-white rounded-full shadow-sm">
+        <div className="mx-auto w-20 h-20 flex items-center justify-center bg-linear-to-br from-blue-50 to-white rounded-full shadow-sm">
           {/* simple AI chip icon */}
           <svg className="w-10 h-10 text-blue-600" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
             <rect x="6" y="6" width="12" height="12" rx="2" stroke="currentColor" strokeWidth="1.5"/>
