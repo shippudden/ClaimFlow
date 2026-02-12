@@ -141,34 +141,3 @@ export default defineConfig({
 Then frontend can call:
 ```javascript
 fetch('/api/claim/submit', {...})  // Proxy handles routing to :3000
-```
-```
-
----
-
-## 📧 MESSAGE TO SEND DAVID
-```
-Hey David! 👋
-
-Backend APIs are ready and tested ✅
-
-All 3 endpoints working:
-- POST /api/claim/submit - returns claimId + analysis immediately
-- GET /api/claim/timeline?claimId=X - returns your exact format
-- GET /api/claim/status?claimId=X - returns progress data
-
-How to test:
-1. I'm running backend on http://localhost:3000
-2. You can test: curl http://localhost:3000/health
-3. Full docs in backend/API_DOCS.md
-
-Frontend integration:
-Since your Vite app runs on :5173 and backend on :3000, you have 2 options:
-
-Option 1: Call http://localhost:3000/api/... directly
-Option 2: Add Vite proxy (see API_DOCS.md)
-
-The timeline response matches your format exactly:
-{ time: "Mon, 10:15 AM", text: "...", active: true/false }
-
-Ready for you to hook up! Let me know if you need any changes 🚀
